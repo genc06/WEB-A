@@ -4,7 +4,7 @@ session_start();
 require_once("./conn.php");
 $db = conn();
 include("NewsletterModel.php");
-
+include("NewsletterController.php");
 
 
 $sub = getSubscribedEmails();
