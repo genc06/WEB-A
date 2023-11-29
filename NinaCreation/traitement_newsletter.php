@@ -3,13 +3,14 @@ session_start();
 
 require_once("./conn_phpmyadmin.php");
 $db = conn();
-
+include("NewsletterModel.php");
+$sub = getSubscribedEmails();
 
 if (isset($_POST['objet']) && !empty($_POST['objet']) && isset($_POST['message']) && !empty($_POST['message'])) {
 
 
-    $req = $db->prepare("SELECT EMAIL_CLI , NEWSLETTER_CLI FROM CLIENT WHERE NEWSLETTER_CLI = 'true'");
-    $req->execute();
+    $req = $sub;
+    
 
     while ($res = $req->fetch()) {
 
