@@ -13,7 +13,7 @@
 <body>
     <?php
     if (isset($_SESSION['idcli'])) {
-        require_once("./conn_phpmyadmin.php");
+        require_once("./conn.php");
         $db = conn();
 
         $idClient = $_SESSION['idcli'];

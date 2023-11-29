@@ -24,7 +24,7 @@
     <div class="container">
         <div class="profile">
             <?php
-            require_once("./conn_phpmyadmin.php");
+            require_once("./conn.php");
             $db = conn();
             $requeteProfile = $db->prepare("SELECT * FROM CLIENT WHERE ID_CLIENT = :id");
             $requeteProfile->execute([":id" => $_SESSION["idcli"]]);

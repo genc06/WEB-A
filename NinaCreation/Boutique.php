@@ -37,7 +37,7 @@
         }
         function requeteprod($valeur, $type)
         {
-            require_once("./conn_phpmyadmin.php");
+            require_once("./conn.php");
             $db = conn();
             $valeur = str_replace('"', "", $valeur);
             $reqprods = $db->prepare("SELECT * FROM PRODUIT 

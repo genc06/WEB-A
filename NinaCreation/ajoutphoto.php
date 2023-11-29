@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <?php
-require_once("./conn_phpmyadmin.php");
+require_once("./conn.php");
 $db = conn();
 ?>
 

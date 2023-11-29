@@ -15,7 +15,7 @@
 </head>
 <?php
 require_once("./include/header.php");
-require_once("./conn_phpmyadmin.php");
+require_once("./conn.php");
 $db = conn();
 
 ?>
