@@ -20,7 +20,7 @@
     <section-prod>
         <p>NOS MEILLEURS PRODUITS</p>
         <?php
-        require_once("./conn_phpmyadmin.php");
+        require_once("./conn.php");
         $db = conn();
 
         $reqprods = $db->prepare("SELECT DISTINCT PRODUIT.ID_PRODUIT,NOM_PRODUIT FROM PRODUIT 
