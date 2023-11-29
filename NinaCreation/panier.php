@@ -19,7 +19,7 @@
 
     <body>
         <?php
-        require_once("./conn_phpmyadmin.php");
+        require_once("./conn.php");
         $db = conn();
 
         if (isset($_SESSION['idcli']) && !empty($_SESSION['idcli'])) {

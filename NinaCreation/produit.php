@@ -24,7 +24,7 @@
     <section-produit>
 
         <?php
-        require_once("./conn_phpmyadmin.php");
+        require_once("./conn.php");
         $db = conn();
         $cmdprod = $db->prepare("SELECT PRODUIT.`ID_PRODUIT`,`NOM_PRODUIT`,`DESCRIPTION_PRODUIT`,`PRIX_PRODUIT`,`STOCK_PRODUIT`,`NOM_TYPE`,`NOM_CATEGORIE` FROM PRODUIT   
                                 JOIN TYPE_PROD ON TYPE_PROD.ID_TYPEPROD = PRODUIT.ID_TYPEPROD 

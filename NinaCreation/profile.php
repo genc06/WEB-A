@@ -32,7 +32,7 @@
             ?>
             <div class="profile-header">
                 <?php
-                require_once("./conn_phpmyadmin.php");
+                require_once("./conn.php");
                 $db = conn();
 
                 $recupphotocli = $db->prepare("select PHOTO_PROFILE from CLIENT where ID_CLIENT = :id");
