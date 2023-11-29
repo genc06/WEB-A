@@ -1,6 +1,6 @@
 <?php 
 
-require_once("./conn_phpmyadmin.php");
+require_once("./conn.php");
 $db = conn();
 $sql = $db->prepare("select * from PARAMETRE");
 $sql->execute();

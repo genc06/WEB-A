@@ -56,7 +56,7 @@
                 <?php
 
                 } else {
-                    require_once("./conn_phpmyadmin.php");
+                    require_once("./conn.php");
                     $db = conn();
 
                     $recupphotocli = $db->prepare("select PHOTO_PROFILE,STATUT_CLI from CLIENT where ID_CLIENT = :id");
