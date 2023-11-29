@@ -1,9 +1,12 @@
 <?php
 session_start();
 
-require_once("./conn_phpmyadmin.php");
+require_once("./conn.php");
 $db = conn();
 include("NewsletterModel.php");
+
+
+
 $sub = getSubscribedEmails();
 
 if (isset($_POST['objet']) && !empty($_POST['objet']) && isset($_POST['message']) && !empty($_POST['message'])) {
