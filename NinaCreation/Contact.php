@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="stylefooter.css">
     <link rel="stylesheet" href="styleContact.css">
     <link rel="stylesheet" href="util.css">
+    <script src="f_contact.js"></script>
 </head>
 
 <?php
@@ -61,12 +62,10 @@ include("./include/header.php") ?>
     <script src="js/main.js"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-    <script>
+    <script src = "f_contact.js">
         window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        
         gtag('js', new Date());
 
         gtag('config', 'UA-23581568-13');
